@@ -1,0 +1,7 @@
+today i learned basic html and css code
+i made a webpage containing simple animation, mouse hover effect, video and iframe tag to use youtube video.
+more clear understanding about div tag and its properties
+imp things, how to remove the underline of link and how to open a new tab when a link is clicked.
+  -to open new tab when a link is clicked, <a href="" target="_blank">anything</a>
+  -to remove underline, make a class of that anchor tag and 
+                      .class-name{ text-decoration:none;}//text-decoration attribute is used
