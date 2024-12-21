@@ -1,3 +1,93 @@
 learned about array and its methods and date methods in JS
 got more familiar with onclick event and DOM functions
 also used external JavaScript
+
+Creation
+Array.from(): Creates a new array from an array-like or iterable object.
+Array.from("hello"); // ['h', 'e', 'l', 'l', 'o']
+Array.isArray(): Checks if a value is an array.
+Array.isArray([1, 2, 3]); // true
+
+Array.of(): Creates an array from arguments.
+Array.of(1, 2, 3); // [1, 2, 3]
+
+Adding and Removing Elements
+push(): Adds elements to the end of an array.
+let arr = [1, 2];
+arr.push(3); // [1, 2, 3]
+
+pop(): Removes the last element.
+let arr = [1, 2, 3];
+arr.pop(); // [1, 2]
+
+shift(): Removes the first element.
+let arr = [1, 2, 3];
+arr.shift(); // [2, 3]
+
+unshift(): Adds elements to the beginning.
+let arr = [1, 2];
+arr.unshift(0); // [0, 1, 2]
+
+splice(): Adds, removes, or replaces elements in the array.
+let arr = [1, 2, 3];
+arr.splice(1, 1, 4); // [1, 4, 3]
+
+Iteration and Transformation
+forEach(): Iterates over elements and executes a callback function.
+[1, 2, 3].forEach((item) => console.log(item));
+
+map(): Creates a new array by applying a function to each element.
+[1, 2, 3].map((x) => x * 2); // [2, 4, 6]
+
+filter(): Creates a new array with elements that pass a condition.
+[1, 2, 3].filter((x) => x > 1); // [2, 3]
+
+reduce(): Reduces the array to a single value by applying a function.
+[1, 2, 3].reduce((sum, x) => sum + x, 0); // 6
+reduceRight(): Similar to reduce(), but starts from the last element.
+
+Searching
+indexOf(): Returns the index of the first occurrence of a value.
+[1, 2, 3].indexOf(2); // 1
+
+lastIndexOf(): Returns the index of the last occurrence.
+[1, 2, 3, 2].lastIndexOf(2); // 3
+
+find(): Returns the first element that matches a condition.
+[1, 2, 3].find((x) => x > 1); // 2
+
+findIndex(): Returns the index of the first element that matches a condition.
+[1, 2, 3].findIndex((x) => x > 1); // 1
+
+includes(): Checks if an array contains a value.
+[1, 2, 3].includes(2); // true
+
+Sorting and Reversing
+sort(): Sorts the array in place.
+[3, 1, 2].sort(); // [1, 2, 3]
+
+reverse(): Reverses the array.
+[1, 2, 3].reverse(); // [3, 2, 1]
+
+Combining and Slicing
+concat(): Combines two or more arrays.
+[1, 2].concat([3, 4]); // [1, 2, 3, 4]
+
+slice(): Extracts a portion of the array without modifying it.
+[1, 2, 3].slice(1); // [2, 3]
+
+Other Utilities
+join(): Joins array elements into a string.
+[1, 2, 3].join("-"); // "1-2-3"
+
+flat(): Flattens nested arrays.
+[1, [2, [3]]].flat(2); // [1, 2, 3]
+
+flatMap(): Maps and flattens the array.
+[1, 2].flatMap((x) => [x, x * 2]); // [1, 2, 2, 4]
+
+some(): Checks if any element satisfies a condition.
+[1, 2, 3].some((x) => x > 2); // true
+
+every(): Checks if all elements satisfy a condition.
+[1, 2, 3].every((x) => x > 0); // true
