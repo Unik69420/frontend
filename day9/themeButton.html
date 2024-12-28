@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style type="text/css">
+      #icon {
+        width: 30px;
+        cursor: pointer;
+        position: fixed;
+        right: 90px;
+        top: 8px;
+      }
+      body {
+        background-color: var(--primary-color);
+      }
+      :root {
+        --primary-color: rgb(175, 179, 149);
+      }
+      .dark-theme {
+        --primary-color: #000000;
+      }
+    </style>
+  </head>
+  <body>
+    <img src="moon.png" id="icon" />
+  </body>
+  <script type="text/javascript">
+    var icon = document.getElementById("icon");
+    icon.onclick = function () {
+      document.body.classList.toggle("dark-theme");
+      if (document.body.classList.contains("dark-theme")) {
+        icon.src = "sun.png";
+      } else {
+        icon.src = "moon.png";
+      }
+    };
+  </script>
+</html>

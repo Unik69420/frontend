@@ -1,0 +1,18 @@
+#icon {
+  width: 30px;
+  cursor: pointer;
+  position: fixed;
+  right: 90px;
+  top: 8px;
+}
+body {
+  background-color: var(--primary-color);
+}
+:root {
+  --primary-color: rgb(175, 179, 149);
+  --secondary-color: black;
+}
+.dark-theme {
+  --primary-color: #000000;
+  --secondary-color: white;
+}
