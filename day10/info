@@ -1,0 +1,9 @@
+Today i learned how to fetch api data and use async await function, promises and callbacks
+also did some work to practice fetching data from api
+made a webpage that fetch pokemon image by just give a pokemon name
+also a webpage that gives random dog images by just clicking a button
+both webpages uses different api and in each JS code i have shown how to use async and await functions commenting out the promise methods
+
+Here is the link to the webpage that fetch pokemon image: https://pokemon-image-api.vercel.app/
+
+Here is the link to the webpage that fetch random dog images: https://random-dog-images-api.vercel.app/
